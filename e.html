@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Your Online Shopping Destination</title>
+    <link rel="stylesheet" href="e.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">ShopEasy</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+
+            </div>
+            <div class="user-actions">
+                <a href="#"><i class="fas fa-user"></i> Account</a>
+                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Home & Garden</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Summer Sale - Up to 50% Off</h1>
+                <p>Discover amazing deals on your favorite items</p>
+                <button class="shop-now">Shop Now</button>
+            </div>
+        </section>
+
+        <section class="featured-categories">
+            <h2>Shop by Category</h2>
+            <div class="categories">
+                <div class="category">
+                    <div class="product-item">
+                        <img src="https://outcasts.in/cdn/shop/files/789.jpg?v=1738224849&width=540,https://outcasts.in/cdn/shop/files/163.png?v=1738224849&width=120https://outcasts.in/cdn/shop/files/160.png?v=1738224849&width=120" via.placeholder.com3200 alt="T-Shirt" />
+                        <h3>Lorena Asymmetric Corset Mini Dress in Navy</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹2039</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://outcasts.in/cdn/shop/files/DSC8038e.jpg?v=1739873865&width=720" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>ALARA Side Split Corset Mini Dress in Wine</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹1299</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div>
+    <div class="product-item ">
+         <img src="https://outcasts.in/cdn/shop/files/oc226_382d3980-c50c-45bb-a708-71c04e0ffd17.jpg?v=1739873783&width=120 "
+                via.placeholder.com200 alt="T-Shirt " />
+         <h3>Men's Cotton T-Shirt</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+        
+        </select>
+
+        <p>₹1299</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div>
+    <div class="product-item ">
+         <img src="https://outcasts.in/cdn/shop/files/oc257.jpg?v=1739873803&width=720 "
+                via.placeholder.com/300" alt="T-Shirt" />
+                        <h3>VIENNA Tie Up corset Back Mini Dress in Black</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹1299</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <strong>
+        </head>
+<body>
+
+<body>
+  <html>
+<head>
+<style>
+  .gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 10px;
+    background: #f0f0f0;
+  }
+  .gallery img {
+    scroll-snap-align: start;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  .gallery::-webkit-scrollbar { display: none; }
+</style>
+</head>
+<body>
+
+<div class="gallery">
+
+  <img src="https://outcasts.in/cdn/shop/files/IMG_8195.jpg?v=1739873870&width=120" alt="Photo 1">
+  <img src="https://outcasts.in/cdn/shop/files/IMG_8193.jpg?v=1739873870&width=120" alt="Photo 2">
+  <img src="https://outcasts.in/cdn/shop/files/OUTCAST24170.png?v=1739873871&width=120" alt="Photo 3">
+  <img src="https://outcasts.in/cdn/shop/files/OUTCAST24170.png?v=1739873871&width=120" alt="Photo 4">
+  <img src="https://outcasts.in/cdn/shop/files/OUTCAST24173.png?v=1739873871&width=120" alt="Photo 5">
+  <img src="https://outcasts.in/cdn/shop/files/oc194.jpg?v=1739873872&width=120" alt="Photo 6">
+</div>
+
+</body>
+</html>
+
+      </strong>
+                        <img src="https://outcasts.in/cdn/shop/files/DSC9647.jpg?v=1739873935&width=120" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>FOCUS ON ME Cut Out Ruched Mini Dress in Ivory</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹1200</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div>
+    <div class="product-item ">
+         <img src="https://outcasts.in/cdn/shop/products/alora_dress_black_8_1024x1024_13c5805b-9ef3-4ec7-b573-f4a6233beb25.webp?v=1739873880&width=720 "
+                via.placeholder.com/300" alt="T-Shirt" />
+                        <h3>ALORA Ruched strapless MINI DRESS BLACK</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹2000</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://outcasts.in/cdn/shop/files/oc195.jpg?v=1739873871&width=120" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>JENNICA LACED UP A LINE MINI DRESS</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹2199</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div>
+    <div class="product-item ">
+         <img src="https://tse4.mm.bing.net/th/id/OIP.XPXKKGhYcaJ-tWYRt-PcWQHaNK?r=0&pid=ImgDet&w=178&h=316&c=7&dpr=1.5&o=7&rm=3 "
+                via.placeholder.com/300" alt="T-Shirt" />
+                        <h3>Winter smart casual outfits for the New Year - The Modern Fellows</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹4299</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/402200/05/sv01/fnd/IND/fmt/png/X-Ray-2-Square-Superior-Comfort-Sneakers" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>X-Ray 2 Square Superior Comfort Sneakers</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹4100</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div>
+    <div class="product-item ">
+         <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/395829/02/sv01/fnd/IND/fmt/png/Carina-Slim-Perf-Women 's-Sneakers"
+                via.placeholder.com/300" alt="T-Shirt" />
+         <h3>Carina Slim Perf Women's Sneakers</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹1999</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/678685/01/mod01/fnd/IND/fmt/png/Men's-Premium-Briefs" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>Men's Premium Briefs</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹1599</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div><div class="product-item ">
+         <img src="https://m.media-amazon.com/images/I/81ogB2C8n3L._SX679_.jpg "
+                via.placeholder.com/300" alt="T-Shirt" />
+                        <h3>Van Heusen Women Anti Bacterial Bikini Panty - 100% Super Combed Cotton - No Marks Waistband, Moisture Wicking, Moderate Coverage</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹499</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://m.media-amazon.com/images/I/41lMe4NGqEL.jpg" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>Van Heusen Women Cotton Printed Pack of 3 Hipster Panty - Anti Bacterial, Full Back Coverage (Colors & Prints May Vary)</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹499</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div><div class="product-item ">
+         <img src="https://m.media-amazon.com/images/I/619Llk6juSL._SY741_.jpg "
+                via.placeholder.com/300" alt="T-Shirt" />
+                        <h3></h3>
+
+                        <label for="sizeClovia Women's Cotton Wire Free Casual Full Coverage Bra1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹299</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://m.media-amazon.com/images/I/816U0gH+jVL._SX569_.jpg" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>Enamor Low Impact Women's Cotton Everyday Sports Bra - All Day Comfort, Non Padded, Wirefree, High Coverage - SB06</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹449</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div><div class="product-item ">
+         <img src="https://outcasts.in/cdn/shop/files/96.png?v=1738147424&width=540 "
+                via.placeholder.com/300" alt="T-Shirt" />
+                        <h3>Viktoria faux leather Mini Dress in Black</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹2099</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://i5.walmartimages.com/asr/c94a4c81-bb55-497c-b853-3f8427c6ef31.8910f1d1f06d83f7aebb607cadb4feea.jpeg" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>Men's Classic Fit Suit Separate Pants Flat Front Performance</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹2999</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div><div class="product-item ">
+         <img src="https://i5.walmartimages.com/asr/c94a4c81-bb55-497c-b853-3f8427c6ef31.8910f1d1f06d83f7aebb607cadb4feea.jpeg "
+                via.placeholder.com/300" alt="T-Shirt" />
+                        <h3>Men's Classic Fit Suit Separate Pants Flat Front Performance</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹2999</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src=https://m.media-amazon.com/images/I/61qlRUbfrWL._SX569_.jpg via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>ZOXOWA 4 Inch Cotton Less -02 Above Knee Baby Doll Dress & Nightwear/Nighty/Sleep Dress |Hot & Sexy For Newly Married Couples/Honeymoon/First Night/Anniversary|For Women & Girls Color (Gajri)</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹159</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div><div class="product-item ">
+         <img src=https://image.hm.com/assets/hm/83/a3/83a3e8c9ac301198dda1ec40c35982e0026d5e04.jpg?imwidth=1260
+                via.placeholder.com/300" alt="T-Shirt" />
+                        <h3>Plissé dress</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹1999</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://image.hm.com/assets/hm/90/df/90df3f6357459cb1fe61c3087f62a22b4e5ed01d.jpg?imwidth=1260" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>Loose Fit Polo shirt</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹2199</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+    </div><div class="product-item ">
+         <img src="https://m.media-amazon.com/images/I/615bAOSxAVL._SY741_.jpg "
+                via.placeholder.com/300" alt="T-Shirt" />
+                        <h3>Bushirt Mens Printed Regular Cream Color Night Suit Set-MNS0154</h3>
+
+                        <label for="size1">Size:</label>
+                        <select id="size1">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+                        <p>₹799</p>
+                        <button>Add to Cart</button>
+                        <div style="margin-top: 10px;">
+                            <button onclick="alert('Liked!')">❤ Like</button>
+                            <button onclick="shareProduct()">🔗 Share</button>
+                            <button onclick="alert('Saved!')">💾 Save</button>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://m.media-amazon.com/images/I/61VGhItsq6L._SY879_.jpg" via.placeholder.com/300 " alt="T-Shirt " />
+         <h3>DAMENSCH Regular Fit Cotton Blend Woven Casual Style Pyjama Dual Pockets Breathable Microfibre Waistband Anti-Bacterial Stretchable Soft Comfortable Pyjama For Men</h3>
+
+        <label for="size1 ">Size:</label>
+        <select id="size1 ">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+
+        <p>₹999</p>
+        <button>Add to Cart</button>
+        <div style="margin-top: 10px; ">
+          <button onclick="alert( 'Liked!') ">❤ Like</button>
+          <button onclick="shareProduct() ">🔗 Share</button>
+          <button onclick="alert( 'Saved!') ">💾 Save</button>
+        </div>
+        </section>
+
+        <section class="featured-products ">
+            <h2>Featured Products</h2>
+            <div class="products ">
+                <!-- Product cards will be added dynamically with JavaScript -->
+            </div>
+        </section>
+
+        <section class="newsletter ">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on new products and upcoming sales</p>
+            <form>
+                <input type="email " placeholder="Your email address ">
+                <button type="submit ">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content ">
+            <div class="footer-section ">
+                <h3>ShopEasy</h3>
+                <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+            </div>
+            <div class="footer-section ">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="# ">Home</a></li>
+                    <li><a href="# ">About Us</a></li>
+                    <li><a href="# ">Products</a></li>
+                    <li><a href="# ">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section ">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="# ">FAQ</a></li>
+                    <li><a href="# ">Shipping Policy</a></li>
+                    <li><a href="# ">Returns & Refunds</a></li>
+                    <li><a href="# ">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section ">
+                <h3>Connect With Us</h3>
+                <div class="social-icons ">
+                    <a href="# "><i class="fab fa-facebook "></i></a>
+                    <a href="# "><i class="fab fa-twitter "></i></a>
+                    <a href="# "><i class="fab fa-instagram "></i></a>
+                    <a href="# "><i class="fab fa-pinterest "></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom ">
+            <p>&copy; 2023 ShopEasy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="e.js "></script>
+</body>
+
+</html>
